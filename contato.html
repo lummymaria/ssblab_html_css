@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - SSBLab</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo_ssblab.png" alt="Logo SSBLab"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pesquisa.html">Pesquisa</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e sobrenome</label>
+				<input type="text" id="nomesobrenome" class="input-padrao" required>
+
+				<label for="instituicao">Instituição</label>
+				<input type="text" id="instituicao" class="input-padrao" required>
+
+				<label for="area">Atualmente qual sua linha de pesquisa?</label>
+				<input type="text" id="area" class="input-padrao" required>
+
+				<fieldset class="como">
+					<legend class="como2">Como conheceu nosso laboratório?</legend>
+					<label for="radio-linkedin"><input type="radio" name="contato" value="linkedin" id="radio-linkedin"> LinkedIn</label>
+					
+					<label for="radio-instagram"><input type="radio" name="contato" value="instagram" id="radio-instagram"> Instagram</label>
+					
+					<label for="radio-outros"><input type="radio" name="contato" value="outros" id="radio-outros" checked> Outros: </label>
+				</fieldset>
+
+				<label class="como2" for="outros">Outros? Qual?</label>
+				<input type="text" id="outros" class="input-padrao" required>
+
+				<label for="email">Email</label>
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+				<label for="telefone">Telefone</label>
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+				<label for="mensagem">Mensagem</label>
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber novas publicações e novos eventos organizados pelo grupo por email?</label>
+
+				<fieldset>
+					<legend>Como prefere receber nossas novidades?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset>
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+		</main>
+
+		<footer>
+			<img src="logo_ssblab.png">
+			<p class="copyright">&copy; Copyright SSBLab - 2020</p>
+		</footer>
+	</body>
+</html>
